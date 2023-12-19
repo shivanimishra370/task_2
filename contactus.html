@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assests/style.css">
+
+    <link rel="stylesheet" href="assests/phone.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+ 
+</head>
+
+<body>
+    <header>
+        <!-- <div id="cursor"></div> -->
+        <nav id="navbar" class="topnav h-nav">
+            <div class="logo">
+                <img src="img/" alt="">
+            </div>
+            <ul class="icon v-nav">
+                <li><a href="/">Home</a></li>
+                <li><a href="/">Sign in</a></li>
+                <li><a href="/contactus">Contact US</a></li>
+
+                <div class="button">
+                    <button id="btn_s"><a href="/signup">Student SignUp</a></button>
+                </div>
+            </ul>
+            <div class="burger">
+                <div class="burlin"></div>
+                <div class="burlin"></div>
+                <div class="burlin"></div>
+            </div>
+        </nav>
+
+    </header>
+    <div class="contact-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-100">
+                    <div class="contact-bnr-text">
+                        <h1>Contact Us</h1>
+                        <ul class="list-inline">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row_contact">
+            <div class="col-50">
+                <div class="main-form">
+                    <h1>Contact Us</h1>
+                    <form action="" method="POST">
+                        <label for="fname">Enter Your Name</label>
+                        <input type="text" name="name" placeholder="Enter your name">
+
+                        <label for="fname">Enter Your E-mail Id</label>
+                        <input type="email" name="email" placeholder="Enter your email">
+
+                        <label for="fname">Enter Your Phone Number</label>
+                        <input type="number" name="mno" placeholder="Enter your Number">
+
+                        <label for="fname">Enter Your Course</label>
+                        <input type="course" name="cro" placeholder="Enter your NUmber">
+                        <!-- <select name="cro">
+                            <option value="Python">Python</option>
+                            <option value="java">Java</option>
+                            <option value="Php">Php</option>
+                            <option value="Node js">Node js</option>
+                        </select> -->
+
+                        <label for="fname">Adress</label>
+                        <input type="text" name="address" placeholder="password">
+
+                        <input id="contact-btn" type="submit" value="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-25">
+                    <div class="footer-logo">
+                        <img src="img/" alt="">
+                    </div>
+                </div>
+                <div class="col-25">
+                    <div class="footer-about">
+                        <h3>Menu</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-25">
+                    <div class="footer-about">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="/">Privacy Policy</a></li>
+                            <li><a href="/">Terms of Use</a></li>
+                            <li><a href="/">Cancellation Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-25">
+                    <div class="footer-icon">
+                        <h3>GET IN TOUCH</h3>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-100 copy-inner">
+                    <p>Copyright © 2018-22  All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+    integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+<script>
+    // ******************cursor ******************
+
+// **************Navbar****************************
+burger = document.querySelector('.burger')
+topnav = document.querySelector('.topnav')
+icon = document.querySelector('.icon')
+
+burger.addEventListener('click', ()=>{
+    topnav.classList.toggle('h-nav')
+    icon.classList.toggle('v-class')
+})
+
+
+
+// ******************section2*********************
+
+var app = document.getElementById('app');
+
+var typewriter = new Typewriter(app, {
+    loop: true
+});
+
+typewriter.typeString('Students Login')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('<strong>Students Login </strong>')
+    .pauseFor(2500)
+    .start();
+    
+
+//*********************section1******************* */ 
+
+// ****************************Gsap *****************************/
+
+gsap.from(".heading h1", {
+    y:100,
+    opacity:0.5,
+    duration:0.9,
+    stagger:0.2
+})
+gsap.from("#students",{
+    y:100,
+    opacity:0.5,
+    duration:2,
+    stagger:0.2
+})
+</script>
+
+</html>

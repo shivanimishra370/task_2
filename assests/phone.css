@@ -1,0 +1,99 @@
+@media only screen and (max-width:991px) {
+    .burger {
+        display: block;
+    }
+
+    #navbar ul {
+        margin-top: 40px;
+    }
+
+    .button {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin-bottom: 30px;
+        /* margin: 10px 0px; */
+    }
+
+    .icon {
+        opacity: 0;
+    }
+
+    .logo {
+        top: 10px;
+        left: 20px;
+        position: absolute;
+    }
+
+    .h-nav {
+        height: 105px;
+    }
+
+    .v-class {
+        opacity: 1;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:920px) {
+    #cursor {
+        display: none;
+    }
+
+    .row {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .col-25 {
+        width: 50%;
+        padding: 15px;
+        max-width: 50%;
+    }
+
+    .col-50 {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .form {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .heading {
+        padding-top: 0px;
+    }
+
+    .heading h1:nth-child(1) {
+        color: rgb(0, 119, 181);
+        font-size: 42px;
+    }
+
+    .heading h1:nth-child(2) {
+        color: rgb(102, 116, 204);
+        font-size: 40px;
+    }
+
+    .heading h1:nth-child(3) {
+        color: rgb(251, 53, 117);
+        font-size: 38px;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .col-25 {
+        width: 100%;
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    #section3 {
+        padding: 0px;
+    }
+
+    .sec1img {
+        height: 300px;
+
+    }
+}
